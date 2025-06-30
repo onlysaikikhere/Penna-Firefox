@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Penna</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="color-controls">
+        <input type="color" id="background-color-picker" title="Background Color" value="#ffffff">
+        <input type="color" id="text-color-picker" title="Text Color" value="#000000">
+      </div>
+    </div>
+    <div class="title-container">
+      <h1 class="title" contenteditable="true">Title</h1>
+      <p class="date"></p>
+    </div>
+    <div class="content">
+      <div id="editor" contenteditable="true"></div>
+    </div>
+  </div>
+  
+  <!-- Floating Action Button -->
+  <div class="floating-btn" id="floating-btn">
+    <i class="fas fa-plus"></i>
+  </div>
+  
+  <!-- Floating Toolbar -->
+  <div class="floating-toolbar" id="floating-toolbar">
+    <button id="align-left"><i class="fas fa-align-left"></i></button>
+    <button id="align-center"><i class="fas fa-align-center"></i></button>
+    <button id="align-right"><i class="fas fa-align-right"></i></button>
+    <button id="strikethrough"><i class="fas fa-strikethrough"></i></button>
+    <button id="underline"><i class="fas fa-underline"></i></button>
+    <button id="save-note-txt"><i class="fas fa-save"></i> TXT</button>
+    <button id="save-note-pdf"><i class="fas fa-file-pdf"></i> PDF</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
